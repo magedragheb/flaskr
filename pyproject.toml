@@ -1,0 +1,20 @@
+[project]
+name = "flaskr"
+version = "1.0"
+description = "Flaskr app as the tutorial"
+dependencies = [
+    "flask>=2.0.0",
+]
+requires-python = ">=3.10"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["flit_core<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.coverage.run]
+branch = true
+source = ["flaskr"]
